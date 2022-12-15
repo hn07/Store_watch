@@ -1,0 +1,261 @@
+.card-body__note{
+    height: 35px;
+}
+.card-title-name{
+    height: 48px;
+}
+.card-animation-zoom{
+    transition: 1s;
+}
+.card-animation-zoom:hover{
+    transform: scale(1.05);
+	transition: 1s;
+    box-shadow: 0.5px 0.5px 20px grey;
+}
+td,th{
+    padding: 10px;
+    border-bottom: 1px solid rgba(0,0,0,0.2) !important;
+}
+.table-list{
+    margin-left: 100px;
+}
+.icon-cart{
+    font-size: 500%;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.slogan {
+    top: 40%;
+    text-align: center;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.slogan h1 {
+    font-family: serif;
+    letter-spacing: 2px;
+    font-size: xxx-large;
+}
+
+.slogan p {
+    width: 600px;
+    font-family: serif;
+    font-size: large;
+    letter-spacing: 5px;
+}
+
+.arrow,
+.arrow:before {
+    position: absolute;
+    left: 50%;
+}
+
+.arrow {
+    width: 40px;
+    height: 40px;
+    top: 85%;
+    margin: -20px 0 0 -20px;
+    transform: rotate(45deg);
+    border-left: none;
+    border-top: none;
+    border-right: 2px #fff solid;
+    border-bottom: 2px #fff solid;
+}
+
+
+.arrow:before {
+    content: '';
+    width: 20px;
+    height: 20px;
+    top: 50%;
+    margin: -10px 0 0 -10px;
+    border-left: none;
+    border-top: none;
+    border-right: 1px #fff solid;
+    border-bottom: 1px #fff solid;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-name: arrow;
+}
+
+@keyframes arrow {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+        transform: translate(-10px, -10px)
+    }
+}
+
+.product-carousel {
+    background-color: white;
+}
+
+.product-carousel .owl-nav {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    text-align: center;
+    height: 30%;
+    z-index: -1;
+}
+
+.product-carousel .owl-prev,
+.owl-next {
+    height: 100%;
+    width: 3%;
+    position: relative;
+    background-color: #fff !important;
+    box-shadow: 0 0 3px 0 #00000066;
+    border-radius: 5px;
+    font-size: 200% !important;
+}
+
+.product-carousel .owl-prev {
+    left: 0;
+    margin-right: 47% !important;
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+    background: #ced4da !important;
+    opacity: 25%;
+}
+
+.product-carousel .owl-next {
+    right: 0;
+    margin-left: 47% !important;
+    border-bottom-right-radius: 0;
+    border-top-right-radius: 0;
+    background: #ced4da !important;
+    opacity: 25%;
+}
+
+.product-carousel .owl-prev span {
+    position: relative;
+
+}
+
+.product-carousel .owl-next span {
+    position: relative;
+
+}
+
+.brands-tilte {
+    position: relative;
+    top: 10%;
+    font-size: xx-large;
+    letter-spacing: 2px;
+    color: cornsilk;
+}
+
+.btn-back-to-top {
+    position: fixed;
+    right: 0;
+    bottom: 5%;
+    border: none;
+    border-radius: 5px 0 0 5px;
+    width: 40px;
+    height: 50px;
+    background-image: url(./images/top.png);
+    background-size: 100%;
+    background-position: center;
+    z-index: 100;
+}
+
+.side-imgs {
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: relative;
+}
+
+.footer__share-title {
+    font-family: sans-serif;
+    letter-spacing: 1px;
+    font-weight: 600;
+    font-size: large;
+}
+
+.footer__share-link {
+    text-align: center;
+    background-color: #fff !important;
+    width: 50px;
+    height: 50px;
+    margin: 0 3%;
+    margin-top: 10px;
+    color: green !important;
+}
+
+.footer__share-link:hover {
+    background-color: green !important;
+    color: #fff !important;
+}
+
+.side-bg {
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.side-bg-rolex {
+    background-image: url(./images/trangchu/ROLEX.png);
+}
+
+.side-bg-omega {
+    background-image: url(./images/trangchu/OMEGA.png);
+}
+
+.side-bg-hublot {
+    background-image: url(./images/trangchu/hublot.png);
+}
+
+.card-product {
+    transition-duration: .3s;
+    transition-property: transform;
+    transition-timing-function: ease-out;
+}
+
+.card-product:hover {
+    box-shadow: 0px 0px 4px 1px #adb5bd;
+    transform: scale(1.05);
+    cursor: pointer;
+    z-index: 1 !important;
+    position: relative;
+}
+
+.product-carousel .owl-prev,
+.owl-next {
+    transition-duration: .3s;
+    transition-property: transform;
+    transition-timing-function: ease-out;
+}
+
+.product-carousel .owl-next:hover {
+    background: #fff !important;
+    opacity: 100%;
+    transform: scale(1.05);
+    cursor: pointer;
+    z-index: 1 !important;
+    position: relative;
+}
+
+.product-carousel .owl-prev:hover {
+    background: #fff !important;
+    opacity: 100%;
+    transform: scale(1.05);
+    cursor: pointer;
+    z-index: 1 !important;
+    position: relative;
+}
+
+.align-sub{
+    vertical-align: sub;
+}
